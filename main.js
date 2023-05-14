@@ -16,6 +16,21 @@ button.addEventListener("click", function () {
   let Perm6 = Perm4 / Perm5
   console.log(Perm6);
 });
-button1.addEventListener("click", function(){
-  let
+button1.addEventListener("click", function(){ 
+   let a1 = Summ.value;
+   let b1 = Time.value;
+   let c1 = Percent.value;
+   let Unit1 = a1/b1;
+   let Unit2 = c1/12/100;
+   let d1 =[];
+   for (let i = 0; i < b1; i++) {
+    if (i==0) {
+      d1.push((Unit1+(a1-(Unit1*i))*c1/12).toFixed(2))
+    } else {
+       d1.push((Unit1+(a1-(Unit1*i))*c1/12).toFixed(2))
+    }
+     
+   }
+
+   console.log(d1);
 })
