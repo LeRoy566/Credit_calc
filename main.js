@@ -7,7 +7,7 @@ button.addEventListener("click", function () {
   let a = Summ.value;
   let b = Time.value;
   let c = Percent.value;
-  let d = 1 + 0.01 * (c / 12);
+  let d = 1 + 0.01 * (c / 12);``
   let Perm1 = d ** b
   let Perm2 = d - 1
   let Perm3 = Perm1 * Perm2
