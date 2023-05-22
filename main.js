@@ -21,8 +21,8 @@ button1.addEventListener("click", function () {
   let b1 = Time.value;
   let c1 = Percent.value;
   let ostatok = [];
-  for (let i = 0; i < b1; i++) {
-    ostatok.push((b1-(i-1)/b1)*a1)
+  for (let i = 1; i <= b1; i++) {
+    ostatok.push(((b1-(i-1))/b1)*a1)
   } 
   console.log(ostatok);
   let plate = [];
